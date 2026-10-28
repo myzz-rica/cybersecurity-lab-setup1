@@ -52,10 +52,10 @@ Kali Linux (10.0.0.2/24)
 2. Downloaded the 64-bit Windows x64 installer.
 3. Installed 7-Zip 26.05.
 
-> Screenshot: 7-Zip download page 
-![Alt Text]()
-> Screenshot: Installer finished 
+
 > Screenshot: 7-Zip File Manager open
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/7-Zip.png)
+
 
 ### Step 2: Install VirtualBox
 
@@ -64,8 +64,9 @@ Kali Linux (10.0.0.2/24)
 3. Installed with default settings.
 4. Found an older version (7.2.8). Uninstalled it and installed the latest, **7.2.22 r175245**.
 
-> Screenshot: VirtualBox download page
 > Screenshot: Help > About VirtualBox showing 7.2.22
+![Alt Text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/virtualBox%20installed.png)
+
 
 ### Step 3: Create the NAT Network
 
@@ -75,9 +76,9 @@ Kali Linux (10.0.0.2/24)
 4. Set the name to `NatNetwork` and the IPv4 prefix to `10.0.0.0/24`.
 5. Clicked **Apply**.
 
-> Screenshot: NAT Networks tab before creating
-> Screenshot: Network settings with 10.0.0.0/24
-> Screenshot: Finished network in the list
+> Screenshot:  Network settings with 10.0.0.0/24 and Finished network in the list
+![Alt Text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/NatNetwork.png)
+
 
 ### Step 4: Download and Import Kali Linux
 
