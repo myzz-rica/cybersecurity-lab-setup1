@@ -85,7 +85,7 @@ Kali Linux (10.0.0.2/24)
 1. Opened https://www.kali.org/get-kali/#kali-virtual-machines
 2. Downloaded the VirtualBox 64-bit image (`kali-linux-2026.2-virtualbox-amd64`).
 3. Extracted the `.7z` archive with 7-Zip.
-4. In VirtualBox, clicked **Machine > Add** and selected the `.vbox` file.
+4. In VirtualBox, clicked **Machine > Open** and selected the `.vbox` file.
 5. Kali appeared in the sidebar with no errors.
 
 > Screenshot: Kali in the VirtualBox sidebar
@@ -103,7 +103,7 @@ Kali Linux (10.0.0.2/24)
 | Network > Adapter 1 > Attached to | NAT Network |
 | Network > Adapter 1 > Name | NatNetwork |
 | Shared Folder path | Host Downloads folder |
-| Shared Folder name | downloads |
+| Shared Folder name | Downloads |
 | Shared Folder options | Auto-mount, Make Global |
 
 > Screenshot: General > Features > Shared Clipboard | Bidirectional
@@ -114,6 +114,8 @@ Kali Linux (10.0.0.2/24)
 
 > Screenshot: Shared Folders window
 ![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/shared%20folder.png)
+
+
 
 
 **Static IP inside Kali**
@@ -148,6 +150,7 @@ Verified with `ip a`. Result: `eth0` has **10.0.0.2/24**.
 
 
 
+
 ### Step 6: Test Connectivity and Take a Snapshot
 
 **Connectivity tests**
@@ -169,9 +172,11 @@ All three returned 0% packet loss: gateway, internet by IP, and DNS.
 
 
 **Snapshot**
-
+1. In VirtualBox, clicked **Machine > Snapshots** and clicked on `Take`.
+2. Snapshot window open for you to type Name and Description
 - Name: `My-Kali-First-Config`
 - Description: `Kali 2026.2, static IP 10.0.0.2/24 on NatNetwork, internet also working`
+3. Click ok
 
 > Screenshot: Snapshots tab showing the snapshot
 ![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/snapshot.png)
