@@ -1,6 +1,6 @@
 # Week 1: Cybersecurity Testing Lab Setup
 
-**Intern:** Erica Gyamfuaa Fordjour
+**Intern:** Erica Gyamfuaa Fordjour 
 **Program:** Cybersecurity & Ethical Hacking Internship, NetworkWalks
 **Date completed:** 25 October 2026
 
@@ -53,6 +53,7 @@ Kali Linux (10.0.0.2/24)
 3. Installed 7-Zip 26.05.
 
 > Screenshot: 7-Zip download page 
+![Alt Text]()
 > Screenshot: Installer finished 
 > Screenshot: 7-Zip File Manager open
 
@@ -96,13 +97,13 @@ Kali Linux (10.0.0.2/24)
 
 | Setting | Value |
 |---------|-------|
-| General > Advanced > Shared Clipboard | Bidirectional |
-| General > Advanced > Drag'n'Drop | Bidirectional |
+| General > Features > Shared Clipboard | Bidirectional |
+| General > Features > Drag'n'Drop | Bidirectional |
 | Network > Adapter 1 > Attached to | NAT Network |
 | Network > Adapter 1 > Name | NatNetwork |
 | Shared Folder path | Host Downloads folder |
 | Shared Folder name | downloads |
-| Shared Folder options | Auto-mount, Make Permanent |
+| Shared Folder options | Auto-mount, Make Global |
 
 > Screenshot: General > Advanced
 > Screenshot: Network > Adapter 1
@@ -183,6 +184,3 @@ All three returned 0% packet loss: gateway, internet by IP, and DNS.
 | Shared folder (Downloads) | Added in VM settings |
 | Snapshot | Done |
 
-## Notes
-
-- Clipboard, drag and drop, and the shared folder are enabled in the VM settings. A hands-on test inside Kali was not recorded in this write-up.
