@@ -88,9 +88,9 @@ Kali Linux (10.0.0.2/24)
 4. In VirtualBox, clicked **Machine > Add** and selected the `.vbox` file.
 5. Kali appeared in the sidebar with no errors.
 
-> Screenshot: Kali download page
-> Screenshot: Extracted folder with .vbox and .vdi files
 > Screenshot: Kali in the VirtualBox sidebar
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/kali%20linux.png)
+
 
 ### Step 5: Configure VM Settings and IP Address
 
@@ -106,9 +106,15 @@ Kali Linux (10.0.0.2/24)
 | Shared Folder name | downloads |
 | Shared Folder options | Auto-mount, Make Global |
 
-> Screenshot: General > Advanced
+> Screenshot: General > Features > Shared Clipboard | Bidirectional
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/general%20featutres%20Bidirectional.png)
+
 > Screenshot: Network > Adapter 1
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/kali%20NatNetwork.png)
+
 > Screenshot: Shared Folders window
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/shared%20folder.png)
+
 
 **Static IP inside Kali**
 
@@ -122,7 +128,7 @@ nmcli connection show
 Set the static IP:
 
 ```
-sudo nmcli connection modify "Wired connection 1" ipv4.method manual ipv4.addresses 10.0.0.2/24 ipv4.gateway 10.0.0.1 ipv4.dns 8.8.8.8
+ipv4.addresses 10.0.0.2/24 ipv4.gateway 10.0.0.1 ipv4.dns 8.8.8.8
 ```
 
 Applied the change:
@@ -134,9 +140,13 @@ sudo nmcli device connect eth0
 
 Verified with `ip a`. Result: `eth0` has **10.0.0.2/24**.
 
-> Screenshot: nmcli connection show
-> Screenshot: nmcli connection modify command
-> Screenshot: ip a showing 10.0.0.2/24
+> Screenshot: set static IP and DNS
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/DNS.png)
+
+> Screenshot: nmcli connection show and ip a showing 10.0.0.2/24
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/error%20solved.png)
+
+
 
 ### Step 6: Test Connectivity and Take a Snapshot
 
@@ -151,14 +161,21 @@ ping -c 4 google.com
 All three returned 0% packet loss: gateway, internet by IP, and DNS.
 
 > Screenshot: Ping results
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/ping%20worked.png)
+
+> Screenshot: Searched for Youtube on google
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/google%20works.png)
+
+
 
 **Snapshot**
 
-- Name: `Kali-Initial-Config`
-- Description: `Kali 2026.2, static IP 10.0.0.2/24 on NatNetwork, internet working`
+- Name: `My-Kali-First-Config`
+- Description: `Kali 2026.2, static IP 10.0.0.2/24 on NatNetwork, internet also working`
 
-> Screenshot: Take Snapshot window
 > Screenshot: Snapshots tab showing the snapshot
+![alt text](https://github.com/myzz-rica/cybersecurity-lab-setup1/blob/main/Images/snapshot.png)
+
 
 ## Troubleshooting
 
